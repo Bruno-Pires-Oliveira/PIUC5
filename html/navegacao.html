@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.navegacao.css" />
+    <title>Navegação entre turmas</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <img
+          src="../assets/logoTurma.avif"
+          alt=""
+          class="logoTurma img-fluid"
+        />
+        <input
+          type="search"
+          id="search"
+          name="Pesquisa"
+          placeholder="Digite o nome de uma turma"
+          tabindex="1"
+        />
+        <ul>
+          <li>
+            <a
+              href="https://www.pr.senac.br/tecnicos/?ca=2&gad_source=1&gclid=CjwKCAiAmMC6BhA6EiwAdN5iLb7nm-fkCikNTm5MpfVgSvllwv4TUID5AUFBwv4WRoDRd3PxRDaNchoCUZ4QAvD_BwE"
+              name="logout"
+              tabindex="2"
+              ><img src="../assets/logout.svg" alt=""
+            /></a>
+          </li>
+          <li><a href="#" tabindex="3">Voltar a pesquisa</a></li>
+          <li><a href="#" tabindex="4">Quem somos nós?</a></li>
+        </ul>
+      </header>
+      <h1>Tela de Cursos</h1>
+      <form action="" id="formulario">
+        <select name="" id="caixa">
+          <option value="">Escolha seu Curso</option>
+          <option value="Técnico Enfermagem">Técnico Enfermagem</option>
+          <option value="Técnico Informática para Internet">
+            Técnico Informática para Internet
+          </option>
+          <option value="Técnico de Segurança do Trabalho">
+            Técnico de Segurança do Trabalho
+          </option>
+        </select>
+        <select name="ano" id="ano">
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
+        <button type="submit" id="botaoEnviar" name="botaoDeEnvioDoFormulario">
+          Ok
+        </button>
+      </form>
+      <footer>
+        <p>Página feita por: Bruno Pires Oliveira , Kauã e Nilo Fernandes</p>
+      </footer>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

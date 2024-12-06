@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fundo: #f8f9fa;
+  --texto: #252a30;
+  --botao: #4a90e2;
+  --headerColor: #007fff;
+  --fonte-titulo: "Pacifico";
+  --fonte-span: "Poppins";
+  --fonte-input: "Quicksand";
+}
+
+header {
+  background-color: var(--headerColor) !important;
+  display: flex !important;
+  padding: 40px !important;
+  gap: 20px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 120px !important;
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacifico/Pacifico.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand/Quicksand_Light.otf");
+}
+.logoTurma {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#search {
+  height: 30px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  transition: 3s;
+}
+#search::placeholder {
+  text-align: center;
+  width: 100%;
+  font-family: var(--fonte-span);
+  font-weight: bold;
+  font-size: 10px;
+}
+#serch:hover {
+  background-color: var(--cor-do-texto);
+  color: var(--cor-da-pagina);
+  border: none;
+  outline: none;
+}
+#search:focus {
+  background-color: var(--cor-do-texto);
+  color: var(--cor-da-pagina);
+  border: none;
+  outline: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  align-items: last baseline;
+  justify-content: center;
+  font-family: var(--fonte-input);
+  font-weight: bold;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+ul li a img {
+  margin-top: 10px;
+  height: 15px;
+}
+a {
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--fundo);
+  font-family: var(--fonte-span);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-family: var(--fonte-titulo);
+  text-align: center;
+}
+.informacoesAlunos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+footer {
+  width: 100%;
+  background-color: var(--headerColor);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  margin-top: 340px;
+}
+footer p {
+  font-size: 14px;
+  color: var(--fundo);
+  font-family: var(--fonte-span);
+  font-weight: bolder;
+}
+@media (min-width: 768px) {
+  .logoTurma {
+    height: 80px;
+    width: 80px;
+  }
+  #search{
+    height: 60px;
+  }
+  #search::placeholder{
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  a {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  footer {
+    margin-top: 408px;
+  }
+}

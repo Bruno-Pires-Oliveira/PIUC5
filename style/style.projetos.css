@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-da-pagina: #ffffff;
+  --headerColor: #007fff;
+  --banner-color: #c0c0c0;
+  --fonte: "Poppins", sans-serif;
+  --fonte-span: "Quicksand", sans-serif;
+  --fonte-titulo: "Pacifico", cursive;
+  --cor-do-texto: #ffffff;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacifico/Pacifico.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand/Quicksand_Light.otf");
+}
+body {
+  background-color: var(--cor-da-pagina);
+}
+
+header {
+  background-color: var(--headerColor);
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.logoTurma {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#search {
+  height: 30px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  transition: 3s;
+}
+#search::placeholder {
+  text-align: center;
+  width: 100%;
+  font-family: var(--fonte-span);
+  font-weight: bold;
+  font-size: 10px;
+}
+#serch:hover {
+  background-color: var(--cor-do-texto);
+  color: var(--cor-da-pagina);
+  border: none;
+  outline: none;
+}
+#search:focus {
+  background-color: var(--cor-do-texto);
+  color: var(--cor-da-pagina);
+  border: none;
+  outline: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  align-items: last baseline;
+  justify-content: center;
+  font-family: var(--fonte);
+  font-weight: bold;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+ul li a img {
+  margin-top: 10px;
+  height: 15px;
+}
+a {
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--cor-do-texto);
+  font-family: var(--fonte-span);
+}
+.imgCarro1 {
+  height: 300px;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fonte-titulo);
+  padding-bottom: 30px;
+}
+
+#descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px !important;
+  font-family: var(--fonte-span);
+  font-weight: bold;
+  text-align: justify;
+}
+section {
+  padding: 30px;
+  width: 100%;
+}
+.iconDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.iconsDiv img {
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+}
+.iconsDiv span {
+  font-family: var(--fonte-span);
+  font-weight: bold;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: var(--fonte-titulo);
+}
+#banner2 {
+  padding: 20px !important;
+  margin-left: 30px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgCarro {
+  height: 400px;
+  object-fit: cover;
+  width: 350px !important;
+}
+.descricaoTec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 30px;
+  text-align: justify;
+}
+.btn {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--headerColor) !important;
+  font-weight: bold !important;
+  font-family: var(--fonte) !important;
+}
+.informacoesAlunos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+h4 {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+}
+.informacoesAlunos img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+footer {
+  width: 100%;
+  background-color: var(--headerColor);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 14px;
+  color: var(--cor-do-texto);
+  font-family: var(--fonte-span);
+}
+@media (min-width: 768px) {
+  #app {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    height: 100vh;
+  }
+
+  header {
+    grid-area: header;
+  }
+  .imgCarro1 {
+    height: 800px;
+    object-fit: cover;
+  }
+  .logoTurma {
+    height: 80px;
+    width: 80px;
+  }
+  #search {
+    height: 40px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    transition: 3s;
+  }
+  #search:hover {
+    background-color: var(--cor-do-texto);
+    color: var(--cor-da-pagina);
+    border: none;
+    outline: none;
+  }
+
+  #search:focus {
+    background-color: var(--cor-do-texto);
+    color: var(--cor-da-pagina);
+    border: none;
+    outline: none;
+  }
+  #search::placeholder {
+    text-align: center;
+    width: 100%;
+    font-family: var(--fonte-span);
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  ul li a img {
+    height: 30px;
+  }
+  a {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  #descricao p {
+    font-size: 1.5rem;
+  }
+  .imgCarro1 {
+    height: 400px;
+    width: 100%;
+  }
+
+  main {
+    grid-area: main;
+  }
+  .iconsDiv img {
+    height: 80px;
+    width: 80px;
+  }
+  .iconsDiv span {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .segundoCarrosel {
+    display: grid;
+    grid-template-areas: "banner2 descricao";
+  }
+  .descricaoTec {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 2.4rem !important;
+  }
+
+  #banner2 {
+    grid-area: banner2;
+  }
+
+  .descricaoTec {
+    grid-area: descricao;
+  }
+
+  .informacoesAlunos {
+    margin-top: 60px;
+  }
+  .informacoesAlunos img {
+    height: 200px;
+    width: 200px;
+  }
+  footer {
+    grid-area: footer;
+    height: 80px !important;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+}

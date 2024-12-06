@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/style.login.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <img
+          src="./assets/logoTurma.avif"
+          alt=""
+          class="logoTurma"
+        />
+        <input
+          type="search"
+          id="search"
+          name="Pesquisa"
+          placeholder="Digite o nome de uma turma"
+          tabindex="1"
+        />
+        <ul>
+          <li>
+            <a
+              href="https://www.pr.senac.br/tecnicos/?ca=2&gad_source=1&gclid=CjwKCAiAmMC6BhA6EiwAdN5iLb7nm-fkCikNTm5MpfVgSvllwv4TUID5AUFBwv4WRoDRd3PxRDaNchoCUZ4QAvD_BwE"
+              name="logout"
+              tabindex="2"
+              ><img src="assets/logout.svg" alt=""
+            /></a>
+          </li>
+          <li><a href="#" tabindex="3">Voltar a pesquisa</a></li>
+          <li><a href="#" tabindex="4">Quem somos nós?</a></li>
+        </ul>
+      </header>
+      <h1>Digite a senha!</h1>
+      <form action="./html/index.html">
+        <span class="spanForm">Acesse o portfólio!</span>
+        <input
+          type="text"
+          placeholder="Insira o nome de usuário"
+          required
+          id="nome"
+          name="nome"
+          tabindex="5"
+        />
+        <input
+          type="password"
+          placeholder="Insira sua senha"
+          id="password"
+          name="password"
+          tabindex="6"
+          required/>
+        <button type="submit" id="submit" name="entrar" tabindex="7">
+          Entrar
+        </button>
+      </form>
+      <footer >
+        <p>Página feita por: Bruno Pires Oliveira , Kauã e Nilo Fernandes</p>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacifico/Pacifico.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand/Quicksand_Light.otf");
+}
+
+:root {
+  --fundo: #f8f9fa;
+  --texto: #252a30;
+  --botao: #4a90e2;
+  --headerColor: #007fff;
+  --fonte-titulo: "Pacifico";
+  --fonte-span: "Poppins";
+  --fonte-input: "Quicksand";
+}
+header {
+  background-color: var(--headerColor) !important;
+  display: flex !important;
+  padding: 40px !important;
+  gap: 20px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 120px !important;
+}
+.logoTurma {
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  margin-right: 20px !important;
+}
+#search {
+  height: 30px !important;
+  width: 50% !important;
+  border-radius: 10px !important;
+  background-color: #fff !important;
+  border: none !important;
+  transition: 3s !important;
+}
+#search::placeholder {
+  text-align: center !important;
+  width: 100% !important;
+  font-family: var(--fonte-span) !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  color: var(--texto) !important;
+}
+#serch:hover {
+  background-color: var(--cor-do-texto) !important;
+  color: var(--cor-da-pagina) !important;
+  border: none !important;
+  outline: none !important;
+}
+#search:focus {
+  background-color: var(--cor-do-texto) !important;
+  color: var(--cor-da-pagina) !important;
+  border: none !important;
+  outline: none !important;
+}
+ul {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  list-style: none !important;
+  align-items: last baseline !important;
+  justify-content: center !important;
+  font-family: var(--fonte) !important;
+  font-weight: bold !important;
+}
+li {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+}
+ul li a img {
+  margin-top: 10px !important;
+  height: 25px !important;
+  width: 25px;
+}
+a {
+  display: block !important;
+  font-size: 10px !important;
+  text-decoration: none !important;
+  color: var(--fundo) !important;
+  font-family: var(--fonte-span) !important;
+}
+body {
+  font-size: 18px !important;
+  background-color: var(--fundo) !important;
+}
+h1 {
+  text-align: center !important;
+  font-family: var(--fonte-titulo);
+  color: var(--texto);
+}
+#caixa {
+  height: 80px;
+  width: 40%;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  font-family: var(--fonte-input);
+  text-align: center;
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+#ano {
+  height: 40px;
+  width: 20%;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  font-family: var(--fonte-input);
+  text-align: center;
+}
+button {
+  height: 80px !important;
+  width: 10% !important;
+  background-color: var(--botao) !important;
+  font-size: 1.8rem !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 20px !important;
+  font-family: var(--fonte-input) !important;
+  font-weight: bold !important;
+  transition: 3s !important;
+  color: var(--fundo) !important;
+  cursor: pointer !important;
+}
+button:hover {
+  background-color: var(--texto) !important;
+}
+form {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  padding: 55px !important;
+  background-color: var(--texto) !important;
+  width: 100% !important;
+  height: 400px !important;
+  border-radius: 30px !important;
+}
+select {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+footer {
+  width: 100%;
+  background-color: var(--headerColor);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  margin-top: 340px;
+}
+footer p {
+  font-size: 14px;
+  color: var(--fundo);
+  font-family: var(--fonte-span);
+  font-weight: bolder;
+}
