@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 :root {
-  --cor-da-pagina: #ffffff;
+  --fundo: #f8f9fa;
+  --texto: #252a30;
+  --botao: #4a90e2;
   --headerColor: #007fff;
-  --banner-color: #c0c0c0;
   --fonte: "Poppins", sans-serif;
   --fonte-span: "Quicksand", sans-serif;
   --fonte-titulo: "Pacifico", cursive;
-  --cor-do-texto: #ffffff;
 }
 
 @font-face {
@@ -30,13 +30,14 @@ body {
 }
 
 header {
-  background-color: var(--headerColor);
-  display: flex;
-  padding: 40px;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100px;
+  background-color: var(--headerColor) !important;
+  display: flex !important;
+  padding: 40px !important;
+  gap: 20px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 120px !important;
 }
 
 .logoTurma {
@@ -93,9 +94,15 @@ ul li a img {
   margin-top: 10px;
   height: 15px;
 }
+label{
+  font-family: var(--fonte);
+  font-weight: bold;
+  color: var(--fundo);
+  font-size: 10px;
+}
 a {
   display: block;
-  font-size: 10px;
+  font-size: 4px;
   text-decoration: none;
   color: var(--cor-do-texto);
   font-family: var(--fonte-span);
@@ -212,6 +219,12 @@ footer p {
   font-family: var(--fonte-span);
 }
 @media (min-width: 768px) {
+  #search{
+    height: 60px;
+  }
+  #search::placeholder{
+    font-size: 0.8rem;
+  }
   #app {
     display: grid;
     grid-template-areas:
@@ -219,7 +232,7 @@ footer p {
       "main main"
       "footer footer";
     height: 100vh;
-  }
+  } 
 
   header {
     grid-area: header;
@@ -229,43 +242,14 @@ footer p {
     object-fit: cover;
   }
   .logoTurma {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
   }
-  #search {
-    height: 40px;
-    width: 50%;
-    border-radius: 10px;
-    background-color: #fff;
-    border: none;
-    transition: 3s;
-  }
-  #search:hover {
-    background-color: var(--cor-do-texto);
-    color: var(--cor-da-pagina);
-    border: none;
-    outline: none;
-  }
-
-  #search:focus {
-    background-color: var(--cor-do-texto);
-    color: var(--cor-da-pagina);
-    border: none;
-    outline: none;
-  }
-  #search::placeholder {
-    text-align: center;
-    width: 100%;
-    font-family: var(--fonte-span);
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  ul {
+  ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap: 60px;
   }
   ul li a img {
     height: 30px;
@@ -288,8 +272,8 @@ footer p {
     grid-area: main;
   }
   .iconsDiv img {
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
   }
   .iconsDiv span {
     font-size: 1.4rem;
@@ -330,5 +314,11 @@ footer p {
   }
   footer p {
     font-size: 1.2rem;
+    color: var(--fundo);
+    font-weight: bolder;
+  }
+  label {
+    font-size: 15px !important;
+    color: #fff;
   }
 }

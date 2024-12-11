@@ -76,6 +76,12 @@ header {
   border: none !important;
   outline: none !important;
 }
+label{
+  font-family: var(--fonte-span) !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  color: var(--fundo) !important;
+}
 ul {
   display: flex !important;
   flex-direction: column !important;
@@ -134,6 +140,7 @@ input {
   outline: none !important;
   border: none !important;
   transition: 2s !important;
+  color: var(--fundo) !important;
 }
 input[type="text"] {
   width: 100% !important;
@@ -198,6 +205,16 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  label{
+    font-size: 15px !important;
+  }
+  ul {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 60px !important;
   }
   .logoTurma {
     height: 80px !important;

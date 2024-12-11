@@ -27,14 +27,18 @@
           placeholder="Digite o nome de uma turma"
         />
         <ul>
-          <li>
-            <a href="../index.html"
-              ><img src="../assets/logout.svg" alt=""
-            /></a>
-          </li>
-          <li><a href="#">Voltar a pesquisa</a></li>
-          <li><a href="../html/quemSomosNos.html">Quem somos nós?</a></li>
-        </ul>
+        </li>
+        <li><label for="pesquisa">Voltar para a pesquisa</label><a href="./navegacao.html" tabindex="3"><img id="imagem" src="../assets/pesquisaIcon.svg" alt=""></a></li>
+        <li><label for="Quem somos nos">Quem somos nós?</label><a href="./quemSomosNos.html" tabindex="4"><img id="imagem" src="../assets/quemSomosIcon.svg" alt=""></a></li>
+        <li>
+          <label for="sair">Sair</label>
+         <a
+            href="../index.html"
+            name="logout"
+            tabindex="2"
+            > <img id="imagem" src="../assets/logout.svg" alt=""
+          /></a>
+      </ul>
       </header>
 
       <main class="main">
@@ -298,7 +302,7 @@
                     class="btn btn-secondary"
                     data-bs-dismiss="modal"
                   >
-                    Fechar
+                    Voltar
                   </button>
                 </div>
               </div>

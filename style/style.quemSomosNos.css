@@ -114,10 +114,23 @@ h1 {
 }
 
 img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+
+  width: 100%;
+  height: 400px;
   object-fit: cover;
+  border-radius: 10px;
+}
+label {
+  font-family: var(--fonte-span) !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  color: var(--fundo) !important;
+}
+#imagem {
+  margin-top: 10px !important;
+  height: 25px !important;
+  width: 25px;
+  
 }
 footer {
   width: 100%;
@@ -132,7 +145,7 @@ footer {
   position: relative;
   bottom: 0;
   padding: 10px;
-  margin-top: 340px;
+
 }
 footer p {
   font-size: 14px;
@@ -151,6 +164,12 @@ footer p {
   #search::placeholder{
     font-size: 0.8rem;
   }
+  img{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
   h1 {
     font-size: 2.2rem;
     margin-bottom: 10px;
@@ -163,5 +182,15 @@ footer p {
   }
   footer {
     margin-top: 408px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+  label {
+    font-size: 15px !important;
+
   }
 }

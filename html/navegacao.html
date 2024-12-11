@@ -22,42 +22,78 @@
           tabindex="1"
         />
         <ul>
+         
+          </li>
+          <li><label for="pesquisa">Voltar para a pesquisa</label><a href="#" tabindex="3"><img src="../assets/pesquisaIcon.svg" alt=""></a></li>
+          <li><label for="Quem somos nos">Quem somos nós?</label><a href="./quemSomosNos.html" tabindex="4"><img src="../assets/quemSomosIcon.svg" alt=""></a></li>
           <li>
-            <a
-              href="https://www.pr.senac.br/tecnicos/?ca=2&gad_source=1&gclid=CjwKCAiAmMC6BhA6EiwAdN5iLb7nm-fkCikNTm5MpfVgSvllwv4TUID5AUFBwv4WRoDRd3PxRDaNchoCUZ4QAvD_BwE"
+            <label for="sair">Sair</label>
+           <a
+              href="../index.html"
               name="logout"
               tabindex="2"
-              ><img src="../assets/logout.svg" alt=""
+              > <img src="../assets/logout.svg" alt=""
             /></a>
-          </li>
-          <li><a href="#" tabindex="3">Voltar a pesquisa</a></li>
-          <li><a href="#" tabindex="4">Quem somos nós?</a></li>
         </ul>
       </header>
       <h1>Tela de Cursos</h1>
-      <form action="" id="formulario">
-        <select name="" id="caixa">
-          <option value="">Escolha seu Curso</option>
-          <option value="Técnico Enfermagem">Técnico Enfermagem</option>
-          <option value="Técnico Informática para Internet">
+      <div class="alignCenter">
+      <form action="">
+        <h2>Selecione o curso!</h2>
+        <legend>Clique no botão abaixo para selecionar a turma e então clique no botão ir para a página!</legend>
+        <select name="caixa" id="caixa">
+          <option value="informatica">
             Técnico Informática para Internet
           </option>
-          <option value="Técnico de Segurança do Trabalho">
+          <option value="enfermagem">Técnico Enfermagem</option>
+          <option value="seguranca">
             Técnico de Segurança do Trabalho
           </option>
         </select>
-        <select name="ano" id="ano">
-          <option value="2024">2024</option>
-          <option value="2023">2023</option>
-        </select>
-        <button type="submit" id="botaoEnviar" name="botaoDeEnvioDoFormulario">
-          Ok
+        <button
+          type="submit"
+          id="botaoEnviar"
+          name="botaoDeEnvioDoFormulario"
+       
+        >
+          Ir para a página
         </button>
       </form>
+    </div>
       <footer>
         <p>Página feita por: Bruno Pires Oliveira , Kauã e Nilo Fernandes</p>
       </footer>
+      
     </div>
-    <script type="module" src="../js/main.js"></script>
+    <script> 
+
+        document.querySelector("button").addEventListener("click", (e)=>{
+          e.preventDefault();
+          const form = document.querySelector("form");
+          const turma = document.querySelector("#caixa").value;
+
+          switch (turma){
+            case "informatica":
+              alert("Bem vindo ao projeto da turma de técnico de informática para a internet!")
+              window.location.href="index.html";
+              break;
+              case "seguranca":
+               alert("Bem vindo ao projeto da turma de técnico de segurança no trabalho!")
+                window.location.href="segurancaDoTrabalho.html";
+                break;
+                case "enfermagem":
+                alert("Bem vindo ao projeto da turma de técnico em enfermagem!")
+                window.location.href="enfermagem.html";
+                break;
+
+              default : 
+              alert("Campo inválido ou turma não cadastrada")
+              break;
+          }
+        })
+   
+           
+      
+    </script>
   </body>
 </html>
