@@ -157,8 +157,8 @@ h2 {
 }
 #banner2 {
   padding: 20px !important;
-  margin-left: 30px;
-  width: 400px;
+  width: 200px;
+  margin-left: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,7 +166,7 @@ h2 {
 .imgCarro {
   height: 400px;
   object-fit: cover;
-  width: 350px !important;
+  width: 200px !important;
 }
 .descricaoTec {
   display: flex;
