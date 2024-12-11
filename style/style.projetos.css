@@ -166,7 +166,7 @@ h2 {
 .imgCarro {
   height: 400px;
   object-fit: cover;
-  width: 200px !important;
+  width: 300px !important;
 }
 .descricaoTec {
   display: flex;
