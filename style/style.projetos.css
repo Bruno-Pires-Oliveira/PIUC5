@@ -208,14 +208,14 @@ h4 {
 footer {
   width: 100%;
   background-color: var(--headerColor);
-  height: 50px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 footer p {
   font-size: 14px;
-  color: var(--cor-do-texto);
+  color: var(--fundo);
   font-family: var(--fonte-span);
 }
 @media (min-width: 768px) {
