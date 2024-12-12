@@ -91,11 +91,7 @@ li {
   gap: 10px !important;
   cursor: pointer !important;
 }
-ul li a img {
-  margin-top: 10px !important;
-  height: 25px !important;
-  width: 25px;
-}
+
 a {
   display: block !important;
   font-size: 4px !important;
@@ -216,6 +212,7 @@ footer p {
   font-weight: bolder;
 }
 @media (min-width: 768px) {
+ 
   form{
     display: flex;
     justify-content: center;
@@ -234,8 +231,21 @@ footer p {
     justify-content: center !important;
     gap: 60px !important;
   }
-  label{
+  footer {
+    grid-area: footer;
+    height: 80px !important;
+  }
+  footer p {
+    font-size: 1.2rem;
+    color: var(--fundo);
+    font-weight: bolder;
+  }
+  label {
     font-size: 15px !important;
+    color: black;
+  }
+  a{
+    font-size: 1rem;
   }
   #caixa {
     height: 80px;
@@ -248,8 +258,8 @@ footer p {
     color: var(--texto);
   }
   .logoTurma {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
   }
   #search{
     height: 60px;
@@ -257,6 +267,7 @@ footer p {
   #search::placeholder{
     font-size: 0.8rem;
   }
+  
 
 
 }

@@ -82,6 +82,7 @@ ul {
   justify-content: center;
   font-family: var(--fonte);
   font-weight: bold;
+
 }
 li {
   display: flex;
@@ -91,14 +92,13 @@ li {
   cursor: pointer;
 }
 ul li a img {
-  margin-top: 10px;
   height: 15px;
 }
 label{
-  font-family: var(--fonte);
-  font-weight: bold;
-  color: var(--fundo);
-  font-size: 10px;
+  font-family: var(--fonte-span) !important;
+  font-weight: bolder !important;
+  color: var(--fundo) !important;
+  font-size: 10px !important;
 }
 a {
   display: block;
@@ -216,7 +216,7 @@ footer {
 footer p {
   font-size: 14px;
   color: var(--fundo);
-  font-family: var(--fonte-span);
+  font-family: var(--texto);
 }
 @media (min-width: 768px) {
   #search{
@@ -236,6 +236,7 @@ footer p {
 
   header {
     grid-area: header;
+    color: var(--texto);
   }
   .imgCarro1 {
     height: 800px;
@@ -256,6 +257,7 @@ footer p {
   }
   a {
     font-size: 1rem;
+
   }
   h1 {
     font-size: 3rem;
@@ -332,6 +334,6 @@ footer p {
   }
   label {
     font-size: 15px !important;
-    color: #fff;
+    color: black;
   }
 }
